@@ -1,8 +1,14 @@
-macro_spotlight: macro_spotlight{
+macro_paste: macro_paste{
 compatible = "zmk,behavior-macro";
-label = "macro_spotlight";
+label = "macro_paste";
 #binding-cells = <0>;
-bindings = <&kp LEFT_COMMAND>, <&kp SPACE>;
+bindings = <&kp K_PASTE>;
+};
+macro_copy: macro_copy{
+compatible = "zmk,behavior-macro";
+label = "macro_copy";
+#binding-cells = <0>;
+bindings = <&kp K_COPY>;
 };
 macro_clipboard: macro_clipboard{
 compatible = "zmk,behavior-macro";
